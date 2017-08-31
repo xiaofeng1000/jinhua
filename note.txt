@@ -1,0 +1,42 @@
+//@time: 2017/02/07   la9J7Yz3Uv
+
+css3知识{
+	-moz     兼容火狐浏览器;
+	-webkit  兼容谷歌和苹果浏览器;
+	-ms      兼容IE浏览器;
+	-o 	 兼容欧鹏浏览器;
+	@font-face{font-family：字体名称  src：url（）路径}  加载服务器端的字体;
+	border-radius	圆角 [左上][右上][右下][左下];
+	box-shadow 	盒子阴影[X][Y][模糊距离][影子尺寸][颜色][inset]	多个用逗号隔开;
+	text-shadow     字体阴影;
+	border-image:url（边框背景图片） 数字 延伸方式[round][repeat][stretch];
+	background-color:rgba(r,g,b,a) 背景透明度;
+	background:linear-gradient([从哪到哪],[开始颜色],[结束颜色]) ;
+	text-voerflow:clip[剪切]|ellipsis[省略标记];
+	white-space:nowrap;   强制一行显示;
+	background-origin     背景图片的显示位置[border-box]|[padding-box]|[content-box]
+	:not（） 伪类选择器  除了什么
+	:empty   选择没有内容的标签
+	:after   在内容后添加
+	:defore	 在内容前添加
+	:nth-child（） 自定义选择器
+	transform   改变
+	transition  过度  csss属性 时间秒 多个用逗号隔开
+	transition-origin 改变的起始位置
+	
+	     
+}
+javascript知识{
+	setInterval() 计时器 (方法 , 时间) 
+	appendChild() 添加节点
+	removeChild() 删除节点
+	attributes()  属性节点
+	document.onreadystatechange 页面加载事件  complete
+	document.readyState  页面加载状态
+
+}
+微信小程序｛
+	打开新页面：wx.navigateTo({url:'路径'}) //子页面跳转 只能5层   会触发Hide生命周期隐藏函数
+	打开新页面：wx.redirectTo({url:'路径'}) //同级页面跳转         会触发onUnload生命周期卸载函数
+｝
+css3 代码兼容网址autoprefixer.github.io
