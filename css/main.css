@@ -1,0 +1,110 @@
+*{margin:0;padding: 0;-webkit-box-sizing: border-box;box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none;font-family: "微软雅黑";}
+@font-face{font-family: dbgb;src: url('../fonts/德彪钢笔行书字库.ttf');}
+header{width: 1082px;margin:0 auto;height: 180px;}
+.head-top{position: relative;min-height: 105px;padding: 20px 0;width: 88%;margin:0 auto;}
+.head-title p,.head-phone p,.head-top >h2{
+	font-weight: bold;
+	font-family: dbgb;
+}
+.index-p2{
+	font-size: 20px;
+}
+.index-p,.index-phone{color: #0161FF;font-weight: bold; font-size: 24px;}
+.head-top >h2,.head-title,.head-phone{
+	position: absolute;
+	line-height: 32px;
+}
+.head-top >h2{
+	font-size: 34px;
+	line-height: 58px;
+	left: 0;
+}
+.head-title{
+	width: 57%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.head-phone{
+	right: 0;
+}
+p.index-phone{
+	font-family: "微软雅黑";
+}
+nav.nav {
+}
+nav.nav li{
+	width: 14%;
+	float: left;
+	text-align: center;
+	border-right: 1px #000 solid;
+	
+}
+nav.nav li a{
+	color: #0161FF;
+	font-size: 20px;
+
+}
+.slide ul{
+	position: relative;
+}
+.slide ul li{
+	position: absolute;
+}
+.slide ul li >img{
+	width: 100%;
+}
+.index-content{
+	width: 1082px;
+	margin: 0 auto;
+}
+.index-content-module{
+	border: 1px #ccc solid;
+	margin-top: 20px;
+	    padding: 0 10px;
+}
+.module-top h3{
+	float: left;
+	padding: 20px 10px;
+}
+.module-top span{
+	float: right;
+	padding: 20px 10px;
+}
+.module-img{
+	width: 45%;
+	clear: both;
+}
+.module-img img{
+	width: 100%;
+	float: left;
+}
+.module-art{
+	padding: 20px;
+	float: right;
+	width: 55%;
+}
+.module-art p{
+
+}
+.index-content-module:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+footer{
+	clear: both;
+	width: 100%;
+	height: 130px;
+	background-color: #0161FF;
+	text-align: center;
+	padding: 20px;
+
+}
+footer >p,footer >p a{
+	margin-top: 20px;
+	font-family: "微软雅黑";
+	color: #FFFDFF;
+}
