@@ -1,6 +1,7 @@
 *{margin:0;padding: 0;-webkit-box-sizing: border-box;box-sizing: border-box;}
 ul{list-style: none;}
 a{text-decoration: none;font-family: "微软雅黑";}
+h1,h2,h3,h4,h5,p{font-family: "微软雅黑";}
 @font-face{font-family: dbgb;src: url('../fonts/德彪钢笔行书字库.ttf');}
 header{width: 1082px;margin:0 auto;height: 180px;}
 .head-top{position: relative;min-height: 105px;padding: 20px 0;width: 88%;margin:0 auto;}
@@ -29,23 +30,48 @@ header{width: 1082px;margin:0 auto;height: 180px;}
 }
 .head-phone{
 	right: 0;
+	background: -webkit-gradient(linear, left top, right top, from(#fff) , to(#E7FCFF));
+	background: -webkit-linear-gradient(left, #fff , #E7FCFF);
+	background: -o-linear-gradient(left, #fff , #E7FCFF);
+	background: linear-gradient(to right, #fff , #E7FCFF);
+	padding: 2px 10px 2px 10px;
 }
 p.index-phone{
 	font-family: "微软雅黑";
 }
-nav.nav {
-}
-nav.nav li{
+
+nav.nav >ul >li{
 	width: 14%;
 	float: left;
 	text-align: center;
-	border-right: 1px #000 solid;
-	
+	border-right: 1px #0161FF solid;
+	cursor: pointer;
 }
 nav.nav li a{
 	color: #0161FF;
 	font-size: 20px;
 
+}
+nav.nav >ul >li >ul >li{
+	padding-top: 8px;
+
+}
+nav.nav >ul >li >ul{
+	background-color: #0161FF;
+	display: none;
+	position: absolute;
+	z-index: 100;
+	width: 152px;
+	margin-left: -1px; 
+}
+nav.nav >ul >li:hover a{
+	color: #fff;
+}
+nav.nav >ul >li:hover{
+	background-color: #0161FF;
+}
+nav.nav >ul >li:hover ul{
+	display: block;
 }
 .slide ul{
 	position: relative;
@@ -63,15 +89,50 @@ nav.nav li a{
 .index-content-module{
 	border: 1px #ccc solid;
 	margin-top: 20px;
-	    padding: 0 10px;
+	padding: 0 10px 20px 10px;
+	    box-shadow: 0px 1px 5px #999999;
+}
+.module-top{
+	height: 55px;
+	line-height: 55px;
 }
 .module-top h3{
 	float: left;
-	padding: 20px 10px;
+	padding: 0 10px;
+	color: #0161FF;
 }
 .module-top span{
-	float: right;
-	padding: 20px 10px;
+    float: right;
+    width: 108px;
+    height: 30px;
+    margin-top: 13px;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 0px 1px 5px #999999;
+}
+.module-top span a{
+	width: 78px;
+	background-color: #0161FF;
+	display: block;
+	float: left;
+	height: 30px;
+	color: #fff;
+}
+.module-top span i{
+	height: 30px;
+	width: 30px;
+	display: block;
+	float: left;
+	color: #fff;
+	background-color: #86D0EA;
+	font-style: normal;
+	font-size: 36px;
+	font-weight: bold;
+}
+.module-art p{
+	text-indent: 2em;
+	line-height: 26px;
+	font-family: "微软雅黑";
 }
 .module-img{
 	width: 45%;
@@ -89,12 +150,221 @@ nav.nav li a{
 .module-art p{
 
 }
-.index-content-module:after{
+.index-content-module:after,.list-art:after{
 	content: "";
 	display: block;
 	clear: both;
 }
+.module-list-img {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	margin: 20px 0;
+}
+.module-list-img h3{
+	margin-top: 10px;
+
+}
+.module-list-art{
+	height: 218px;
+
+}
+.module-list-art h3{
+	text-align: center;
+	padding-top: 28px;
+
+}
+.module-list-art img{
+	float: left;
+}
+.module-list-art p{
+    text-indent: 2em;
+    line-height: 26px;
+    font-family: "微软雅黑";
+    padding: 20px;
+    width: 775px;
+    float: right;
+    color: #A6A6A6;
+}
+.module-foot-r,.module-foot-l{
+	width: 49%;
+	border: 1px #ccc solid;
+	height: 442px;
+	box-shadow: 0px 1px 5px #999999;
+}
+.form-button{
+	text-align: center;
+	clear: both;
+}
+.module-foot{
+	padding: 0;
+	border: none;
+    box-shadow: none;
+}
+.module-foot-l {
+	line-height: 46px;
+	float: left;
+	padding: 20px;
+
+}
+.module-foot-l input{
+	width: 300px;
+	height: 30px;
+	background-color: #ccc;
+	margin-left: 10px;
+}
+.module-foot-l textarea{
+	background-color: #ccc;
+	min-height: 100px;
+	width: 300px;
+	margin-left: 10px;
+}
+.form-button button{
+	background-color: #ccc;
+	padding: 5px 10px;
+	border-radius: 12px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.module-foot-l h3{
+	font-size: 24px;
+	text-align: center;
+}
+.module-foot-l label{
+	font-size: 20px;
+	float: left;
+	cursor: pointer;
+}
+.module-foot-r{
+	float: right;
+	padding: 0 20px 20px 20px;
+}
+.module-news li span{
+	float: right;
+}
+.module-news li{
+	padding: 14px 0;
+	border-bottom: #ccc 1px dashed;
+}
+.module-news li a{
+	color: #020100;
+	font-size: 18px;
+}
+section.list-art{
+	width: 1082px;
+	margin: 24px auto;
+}
+.list-art-l{
+	width: 18%;
+	float: left;
+
+}
+.list-art-l h2{
+	font-size: 26px;
+	text-align: center;
+	background-color: #0161FF;
+	padding: 12px 0;
+}
+
+.list-art-l ul li a{
+	font-size: 24px;
+	color: #fff;
+}
+.list-art-l ul li{
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 3px;
+    background-color: #7FDEFF;
+}
+li.list-select{
+	background-color: #0161FF!important;
+}
+
+.list-art-r{
+	width: 80%;
+	float: right;
+}
+.list-art-ul li{
+	height: 100px;
+	margin-top: 18px;
+	border-bottom: #D2D2D2 solid 1px;
+}
+.list-article{
+	padding: 10px;
+    width: 728px;
+    float: right;
+    line-height: 26px;
+}
+
+.list-art-ul{
+	margin-top: 20px;
+}
+.list-art-r h3{
+	padding: 10px;
+	border-bottom: #D2D2D2 solid 1px;
+}
+.list-art-r p{
+	text-indent: 2em;
+}
+.list-art-r p a{
+	color: #76777B;
+}
+.list-article:hover h4,.list-article:hover p{
+	text-decoration: underline;
+}
+.list-time{
+	width: 86px;
+    height: 86px;
+    background-color: #D2D2D2;
+    text-align: center;
+    float: left;
+    line-height: 38px;
+    font-weight: bold;
+}
+.page >li{
+	float: left;
+	background-color: #0161FF;
+	padding: 5px;
+	margin-left: 10px;
+	padding: 5px 10px 5px 10px;
+	margin-top: 20px;
+
+}
+.page >li a{
+	color: #fff;
+}
+.page{
+	margin: 55px auto;
+	clear: both;
+}
+.page-select{
+	background-color: #7FDEFF!important;
+}
+span.day{
+	font-size: 34px;
+	display: block;
+	margin-top: 10px;
+}
+div.list-images{
+	float: left;
+	margin: 16px; 
+}
+div.list-images h4{
+	text-align: center;
+	margin-top: 20px;
+}
+div.content{
+	padding: 20px;
+}
+.list-art h2{
+	font-size: 36px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	color: #0161FF;
+	padding: 20px;
+}
 footer{
+	margin-top: 45px;
 	clear: both;
 	width: 100%;
 	height: 130px;
